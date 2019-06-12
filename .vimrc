@@ -11,7 +11,6 @@ set runtimepath^=~/.vim/bundle/ctrlp.vim
 syntax enable
 "set background=dark
 colorscheme monokai
-"colorscheme solarized
 
 let mapleader = ","
 let g:mapleader = ","
@@ -32,13 +31,9 @@ set list listchars=tab:»-,trail:·,extends:»,precedes:«
 
 set backspace=indent,eol,start
 
-set wildignore+=/home/hungva/vnlab/**/contrib/**
-set wildignore+=/home/hungva/vnlab/**/cpplint/**
-set wildignore+=/home/hungva/vnlab/**/dev/**
-
 " YCM Configuration
 "let g:ycm_global_ycm_extra_conf = '/home/hungva/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
-let g:ycm_global_ycm_extra_conf = '/home/hungva/.ycm_extra_conf.py'
+let g:ycm_global_ycm_extra_conf = '/Users/finaldevil/.ycm_extra_conf.py'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_enable_diagnostic_highlighting = 1
@@ -75,7 +70,8 @@ set rnu
 set comments=sl:/*,mb:\ *,elx:\ */
 
 "set tags+=~/.vim/tags/boost
-"set tags+=~/vnlab/tags
+set tags+=~/vnlab/tags
+
 map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
@@ -93,7 +89,7 @@ set pastetoggle=<F3>
 " switch between header/source with F4
 map <F4> :e<CR>
 " recreate tags file with F5
-" map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+map <F5> :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 " create doxygen comment
 "map <F6> :Dox<CR>
 " build using makeprg with <F7>
@@ -117,7 +113,7 @@ else
   " spell settings
   ":setlocal spell spelllang=en
   " set the spellfile - folders must exist
-  "set spellfile=~/.vim/spellfile.add
+  set spellfile=~/.vim/spellfile.add
   map <M-Down> ]s
   map <M-Up> [s
 endif
@@ -177,10 +173,6 @@ map <Leader>l <Plug>(easymotion-bd-jk)
 let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<2-LeftMouse>'],
     \ 'AcceptSelection("t")': ['<cr>'],
-    \ }
-
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/]\.(git|hg|svn)|.\/cpplint|.\/contrib|.\/dev|.\/doc|.\/environment|.\/experiments|.\/php_ext|.\/takataka|.\/teasernet_stat|.\/urlcheck$',
     \ }
 
 

@@ -34,6 +34,8 @@ set backspace=indent,eol,start
 " YCM Configuration
 "let g:ycm_global_ycm_extra_conf = '/home/hungva/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
 let g:ycm_global_ycm_extra_conf = '/Users/finaldevil/.ycm_extra_conf.py'
+let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
+let g:ycm_python_binary_path = '/usr/local/bin/python3'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_enable_diagnostic_highlighting = 1
@@ -191,3 +193,4 @@ xmap <Space>M <Plug>(quickhl-manual-reset)
 
 nmap <Space>j <Plug>(quickhl-cword-toggle)
 nmap <Space>] <Plug>(quickhl-tag-toggle)
+

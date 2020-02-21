@@ -195,3 +195,7 @@ nmap <Space>j <Plug>(quickhl-cword-toggle)
 nmap <Space>] <Plug>(quickhl-tag-toggle)
 
 hi SpellBad ctermbg=8
+
+
+let g:go_def_mode='gopls'
+let g:go_info_mode='gopls'

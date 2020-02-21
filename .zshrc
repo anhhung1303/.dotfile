@@ -69,12 +69,17 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
 
-alias ll='ls -lahf'
+#alias ll='ls -lahfFp'
+#alias clang='/usr/bin/clang'
+#alias clang++='/usr/bin/clang++'
 
 # User configuration
 
@@ -105,3 +110,9 @@ alias zshconfig="vim ~/.zshrc"
 export PATH="/usr/local/opt/llvm/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export PATH=$PATH:$(go env GOPATH)/bin
+export GOPATH=$(go env GOPATH)
+export GOROOT=/usr/local/go
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/tools"
+export PATH="$PATH:$ANDROID_HOME/platform-tools"

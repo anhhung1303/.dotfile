@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "coc-clangd": ">=0.4.14",
-    "coc-explorer": ">=0.7.27",
-    "coc-go": ">=0.10.0",
-    "coc-json": ">=1.2.6",
-    "coc-yaml": ">=1.1.0"
-  }
-}

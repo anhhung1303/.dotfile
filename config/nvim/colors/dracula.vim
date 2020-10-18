@@ -311,9 +311,12 @@ hi! link helpHyperTextJump DraculaLink
 hi! link helpCommand DraculaPurple
 hi! link helpExample DraculaGreen
 hi! link helpBacktick Special
+hi Normal ctermbg=None ctermfg=None guifg=None guibg=None
+
 
 "}}}
 
 " vim: fdm=marker ts=2 sts=2 sw=2 fdl=0 et:
 
 hi! CocHighlightText ctermfg=231 ctermbg=241 cterm=bold guifg=#E1CE13 guibg=#64645e gui=bold
+

@@ -11,7 +11,7 @@ Plug 'tpope/vim-surround'
 Plug 'rhysd/git-messenger.vim'
 
 " align text ga=
-" Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/vim-easy-align'
 
 " Macro editing: <leader>q + register
 Plug 'zdcthomas/medit'
@@ -40,7 +40,6 @@ Plug 'kevinoid/vim-jsonc'
 
 " colorscheme
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'chiendo97/intellij.vim'
 "Plug 'morhetz/gruvbox'
 "Plug 'sonph/onehalf', {'rtp': 'vim/'}
 "Plug 'rakr/vim-one'

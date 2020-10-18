@@ -1,0 +1,61 @@
+{
+    "coc.preferences.rootPatterns": [
+        "build.sbt",
+        "build.sc",
+        "build.grade",
+        "pom.xml",
+        ".git",
+        ".hg"
+    ],
+    "coc.preferences.formatOnSaveFiletypes": [
+        "python",
+        "json",
+        "go"
+    ],
+    "coc.preferences.formatOnType": true,
+    "coc.source.omni.filetypes": [
+        ""
+    ],
+    "coc.source.buffer.priority": 1,
+    //"coc.preferences.jumpCommand": "vsplit",
+    "explorer.sources": [
+        {
+            "name": "buffer",
+            "expand": false
+        },
+        {
+            "name": "file",
+            "expand": true
+        }
+    ],
+    "explorer.width": 30,
+    "explorer.file.column.indent.indentLine": true,
+    "explorer.icon.enableNerdfont": true,
+    "explorer.file.column.git.showIgnored": true,
+    "explorer.openAction.relativePath": true,
+    "explorer.keyMappingMode": "default",
+    "explorer.previewAction.onHover": false,
+    "explorer.toggle": false,
+    "explorer.focus": false,
+    "explorer.activeMode": true,
+    "go.goplsOptions": {
+        "completeUnimported": true,
+        "usePlaceholders": true,
+        "deepCompletion": false
+    },
+    "go.trace.server": "verbose",
+    "go.goplsPath": "gopls",
+    "suggest.noselect": false,
+    "suggest.languageSourcePriority": 2,
+    "suggest.timeout": 5000,
+    "suggest.maxCompleteItemCount": 20,
+    "suggest.autoTrigger": "always",
+    "suggest.minTriggerInputLength": 1,
+    "list.nextKeymap": "<C-n>",
+    "list.previousKeymap": "<C-p>",
+    "diagnostic.errorSign": "•",
+    "diagnostic.warningSign": "•",
+    "diagnostic.infoSign": "•",
+    "diagnostic.refreshOnInsertMode": true,
+    "clangd.path": "/usr/local/Cellar/llvm/10.0.1/bin/clangd"
+}
